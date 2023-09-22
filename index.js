@@ -468,7 +468,7 @@ function botpic() {
                 }
                 console.log("chargement des commandes terminé ✅");
                 let cmsg = `╔════◇
-║ 『𝐙𝐨𝐤𝐨𝐮-𝐌𝐃』
+║ 『조빈스🌸』
 ║    Prefix : [ ${prefixe} ]
 ║    Mode :${md}
 ║    Total Commandes : ${evt.cm.length}︎
