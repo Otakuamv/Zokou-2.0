@@ -27,7 +27,7 @@ zokou({ nomCom: "dev", categorie: "Général", reaction: "💞" }, async (dest, 
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 Bienvenue chez Zokou ! Voici les développeurs :\n\n";
+    let message = "👋 Bienvenue chez 조빈스🌸 ! Voici les développeurs :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
