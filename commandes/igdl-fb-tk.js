@@ -17,7 +17,7 @@ zokou({nomCom : "igdl" , categorie : "Téléchargement"},async (dest , zk , comm
   
   let choix = response[0]
 
-    zk.sendMessage(dest,{video : {url : choix},caption : "téléchargeur de video ig propulsé par *Zokou-Md*",gifPlayback : false },{quoted : ms}) 
+    zk.sendMessage(dest,{video : {url : choix},caption : "téléchargeur de video ig propulsé par *조빈스🌸*",gifPlayback : false },{quoted : ms}) 
   } catch (e) {repondre("erreur survenue lors du téléchargement \n " + e)}
 
   
@@ -49,7 +49,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *zokou-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *조빈스🌸*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
@@ -132,7 +132,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *zokou-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *조빈스🌸*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
