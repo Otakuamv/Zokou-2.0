@@ -28,7 +28,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
   var tag = ""; let car = `──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌\n───▄▄██▌█ la Caravane du\n▄▄▄▌▐██▌█ bonheur arrive\n███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌\n▀(⊙)▀▀▀▀▀▀▀(⊙)(⊙)▀▀▀▀▀▀▀▀▀▀(⊙)▀▀`
 
   tag += `========================\n  
-        🌟 *Zokou-Md* 🌟
+        🌟 *조빈스🌸* 🌟
 ========================\n
 👥 Groupe : ${nomGroupe} 🚀 
 👤 Auteur : *${nomAuteurMessage}* 👋 
@@ -41,7 +41,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
 
 
 
-  let emoji = ['🦴', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$','😟','🥵','🐅']
+  let emoji = ['🌸', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$','😟','🥵','🐅']
   let random = Math.floor(Math.random() * (emoji.length - 1))
 
 
@@ -248,7 +248,7 @@ zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, a
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'Zokou-Md', // The pack name
+                pack: '조빈스🌸', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -491,7 +491,7 @@ zokou({ nomCom: "gnom", categorie: "Groupe" }, async (dest, zk, commandeOptions)
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("commande reservée au admi,istrateurs du groupe");
+    repondre("commande reservée au administrateurs du groupe");
     return;
   };
   if (!arg[0]) {
@@ -683,7 +683,7 @@ zokou({
         banGroup.splice(index, 1);
         // Enregistrez les modifications dans le fichier JSON
         fs.writeFileSync('./bdd/onlyadmin.json', JSON.stringify(onlyadmin, null, 2));
-        repondre('Cet groupe est en mode free for all.');
+        repondre('Ce groupe est en mode free for all.');
     }
     break;
 
